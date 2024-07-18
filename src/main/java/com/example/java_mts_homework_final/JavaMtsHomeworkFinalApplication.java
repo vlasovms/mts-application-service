@@ -8,6 +8,7 @@ public class JavaMtsHomeworkFinalApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JavaMtsHomeworkFinalApplication.class, args);
+
 	}
 
 }
