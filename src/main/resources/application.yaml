@@ -3,7 +3,7 @@ server:
   port: 8181
 spring:
   datasource:
-    url: jdbc:postgresql://database:5432/test
+    url: jdbc:postgresql://database:5432/test?currentSchema=vacation
     username: admin
     password: admin
     driverClassName: org.postgresql.Driver

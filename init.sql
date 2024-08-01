@@ -1,2 +1,2 @@
-create database new_test;
-create table new_new_new(id INT);
+CREATE SCHEMA IF NOT EXISTS vacation;
+create table IF NOT EXISTS application(id SERIAL PRIMARY KEY UNIQUE, start TIMESTAMP NOT NULL);
