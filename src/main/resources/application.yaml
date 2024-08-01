@@ -1,30 +1,9 @@
-spring.application.name: java_mts_homework_final
+spring.application.name: simpleApplication
 server:
   port: 8181
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/test
+    url: jdbc:postgresql://database:5432/test
     username: admin
     password: admin
     driverClassName: org.postgresql.Driver
-
-camunda:
-  bpm:
-    admin-user:
-      id: admin
-      password: admin
-    application:
-      delete-upon-undeploy: false
-      scan-for-process-definitions: false
-      deploy-changed-only: true
-      resume-previous-versions: true
-      resume-previous-by: a value
-    job-execution:
-      enabled: true
-    metrics:
-      enabled: false
-      db-reporter-activate: false
-
-
-camunda.bpm.auto-deployment-enabled: false
-
