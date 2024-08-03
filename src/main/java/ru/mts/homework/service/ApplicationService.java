@@ -1,4 +1,4 @@
-package ru.mts.homework.Service;
+package ru.mts.homework.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

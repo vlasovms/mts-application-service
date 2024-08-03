@@ -1,2 +1,1 @@
-CREATE SCHEMA IF NOT EXISTS vacation;
 create table IF NOT EXISTS application(id SERIAL PRIMARY KEY UNIQUE, start TIMESTAMP NOT NULL);
