@@ -1,2 +1,1 @@
-create database new_test;
-create table new_new_new(id INT);
+create table IF NOT EXISTS application(id SERIAL PRIMARY KEY UNIQUE, start TIMESTAMP NOT NULL);
