@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.serialization.Deserializer;
 import ru.mts.homework.entity.Application;
 
-import java.util.Map;
-
 public class ApplicationDeserializer implements Deserializer<Application> {
     @Override
     public Application deserialize(String s, byte[] bytes) {

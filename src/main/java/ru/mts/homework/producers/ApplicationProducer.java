@@ -15,6 +15,7 @@ public class ApplicationProducer {
     private static final String TOPIC = "test";
 
     public void sendToKafka(final Application data) {
-        kafkaTemplate.send(TOPIC, data);
+      //  kafkaTemplate.send(TOPIC, data);
+        kafkaTemplate.send(TOPIC,"azaz",data);
     }
 }

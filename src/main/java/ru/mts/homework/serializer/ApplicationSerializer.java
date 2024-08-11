@@ -1,11 +1,8 @@
 package ru.mts.homework.serializer;
 
-import camundajar.impl.scala.App;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.serialization.Serializer;
 import ru.mts.homework.entity.Application;
-
-import java.util.Map;
 
 public class ApplicationSerializer implements Serializer<Application> {
     @Override
