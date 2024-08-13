@@ -1,7 +1,9 @@
 package ru.mts.homework.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -17,13 +19,22 @@ public class Application {
     private Long id;
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     @JsonFormat(pattern = "MM/dd/yyyy")
-    @Column(name = "start")
+    @Column(name = "start_date")
     private LocalDate startDate;
-    /* @NotEmpty
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    @JsonFormat(pattern = "MM/dd/yyyy")
+    @Column(name = "end_date")
+    private LocalDate endDate;
+    @NotEmpty
     @Column(name = "employee_first_name")
-    private LocalDate empFirstName;
+    private String empFirstName;
     @NotEmpty
     @Column(name = "employee_second_name")
-    private LocalDate empSecondName;
-     */
+    private String empSecondName;
+    @JsonIgnore
+    @Column(name = "decision_comment")
+    private String comment;
+    @JsonIgnore
+    private String status;
+
 }
