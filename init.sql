@@ -1,1 +1,1 @@
-create table IF NOT EXISTS application(id SERIAL PRIMARY KEY UNIQUE, start TIMESTAMP NOT NULL);
+create table IF NOT EXISTS application(id SERIAL PRIMARY KEY UNIQUE, start_date TIMESTAMP NOT NULL, end_date TIMESTAMP NOT NULL, employee_first_name VARCHAR(50) NOT NULL, employee_second_name VARCHAR(50) NOT NULL, decision_comment VARCHAR(250), status VARCHAR(50));

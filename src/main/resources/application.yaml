@@ -7,3 +7,15 @@ spring:
     username: admin
     password: admin
     driverClassName: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: "consumer-2"
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: ru.mts.homework.serializer.AppStatusDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'

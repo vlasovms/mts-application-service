@@ -21,8 +21,8 @@ public class ApplicationController {
     ApplicationProducer applicationProducer;
 
     @PostMapping("/add")
-    public ResponseEntity<String> setRegString(@RequestBody @Validated Application app) {
-        System.out.println(app.toString());
+    public ResponseEntity<String> applicationAdd(@RequestBody @Validated Application app) {
+        app.setStatus("new");
         applicationService.saveApplication(app);
         applicationProducer.sendToKafka(app);
         return ResponseEntity.ok("Application created and kafka message sended");
