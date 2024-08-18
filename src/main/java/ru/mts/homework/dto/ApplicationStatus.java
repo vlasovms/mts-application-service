@@ -1,6 +1,5 @@
-package ru.mts.homework;
+package ru.mts.homework.dto;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data

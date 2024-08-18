@@ -2,8 +2,7 @@ package ru.mts.homework.serializer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.common.serialization.Deserializer;
-import ru.mts.homework.ApplicationStatus;
-import ru.mts.homework.entity.Application;
+import ru.mts.homework.dto.ApplicationStatus;
 
 public class AppStatusDeserializer implements Deserializer<ApplicationStatus> {
     @Override
