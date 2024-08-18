@@ -36,5 +36,4 @@ public class Application {
     private String comment;
     @JsonIgnore
     private String status;
-
 }

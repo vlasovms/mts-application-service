@@ -4,11 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.mts.homework.ApplicationStatus;
+import ru.mts.homework.dto.ApplicationStatus;
 import ru.mts.homework.entity.Application;
 import ru.mts.homework.repository.ApplicationRepository;
 
-import java.util.Optional;
+import java.util.List;
 
 @Service
 public class ApplicationService {
@@ -32,5 +32,9 @@ public class ApplicationService {
             logger.info("Application with id: " + applicationStatus.getId() + " not found!");
         }
 
+    }
+
+    public List<Application> getAll() {
+        return applicationRepository.findAll();
     }
 }
